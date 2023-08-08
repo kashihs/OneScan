@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:src="@drawable/teacher"
+        android:scaleType="fitXY"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#faf5ea"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <EditText
+                android:id="@+id/tFullName"
+                android:layout_width="300dp"
+                android:layout_height="42dp"
+                android:hint="Full Name"
+                android:padding="10dp"
+                android:textColor="#003140"
+                android:background="@drawable/listround"
+                android:elevation="5dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="8dp"
+                android:textSize="14dp"/>
+
+            <EditText
+                android:id="@+id/tEmail"
+                android:layout_width="300dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                android:padding="10dp"
+                android:textColor="#003140"
+                android:background="@drawable/listround"
+                android:elevation="5dp"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="8dp"
+                android:textSize="14dp"/>
+
+            <EditText
+                android:id="@+id/tPassword"
+                android:layout_width="300dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="#003140"
+                android:background="@drawable/listround"
+                android:elevation="5dp"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:textSize="14dp"/>
+
+            <Spinner
+                android:id="@+id/tDept"
+                android:layout_width="300dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/departments"
+                android:padding="10dp"
+                android:textColor="#003140"
+                android:background="@drawable/listround"
+                android:elevation="5dp"
+                android:textSize="14dp"/>
+
+            <Button
+                android:id="@+id/tSignUp"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:text="Sign Up"
+                android:background="@drawable/roundbut"/>
+
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

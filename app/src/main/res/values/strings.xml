@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">One Scan</string>
+    <string name="qr_code">qr_code</string>
+    <string name="enter_your_info">Enter your info</string>
+    <string name="generate_qr_code">Generate QR Code</string>
+
+    <string-array name="select">
+        <item>Teacher</item>
+        <item>Student</item>
+
+    </string-array>
+
+    <string-array name="departments">
+        <item>Information Science</item>
+        <item>Computer Science</item>
+        <item>Biotechnology</item>
+    </string-array>
+
+    <string-array name="subjects">`
+        <item>SEO</item>
+        <item>DSA</item>
+        <item>CNS</item>
+        <item>MAD</item>
+    </string-array>
+
+    <string-array name="size_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

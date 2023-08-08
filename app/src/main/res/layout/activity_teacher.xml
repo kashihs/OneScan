@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e8f5ff"
+    android:gravity="center_horizontal"
+    >
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/alatsi"
+            android:text="Students kindly\nscan the\nQRcode\nfor attendance"
+            android:textAlignment="viewEnd"
+            android:textColor="#003140"
+            android:textSize="30dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:src="@drawable/mobilemsg1"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        >
+        <FrameLayout
+            android:id="@+id/idFLQrCode"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/idTVgenerateQR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="1dp"
+                android:padding="4dp"
+                android:text="Your Code will appear here"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/idIVQRCode"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@color/white" />
+
+
+        </FrameLayout>
+
+        <Spinner
+            android:id="@+id/idTILData"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+
+            android:textColor="#003140"
+            android:paddingLeft="30dp"
+            android:background="@drawable/listround"
+            android:layout_marginTop="20dp"
+            android:elevation="5dp"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/idBtnGenerateQR"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundbut2"
+            android:backgroundTint="#003140"
+            android:elevation="5dp"
+            android:text="Generate QR Code"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>
